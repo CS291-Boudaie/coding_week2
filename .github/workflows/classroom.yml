@@ -11,7 +11,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
       - name: Count
         id: count
         uses: classroom-resources/autograding-command-grader@v1
@@ -22,7 +21,6 @@ jobs:
           command: python -m unittest test_real.TestCount
           timeout: 1
           max-score: 4
-
       - name: Most Frequent Item
         id: most-frequent-item
         uses: classroom-resources/autograding-command-grader@v1
@@ -33,7 +31,6 @@ jobs:
           command: python -m unittest test_real.TestMostFrequentItem
           timeout: 1
           max-score: 4
-
       - name: Most Frequent Count
         id: most-frequent-count
         uses: classroom-resources/autograding-command-grader@v1
@@ -44,7 +41,6 @@ jobs:
           command: python -m unittest test_real.TestMostFrequentCount
           timeout: 1
           max-score: 4
-
       - name: Find Repeat Number
         id: find-repeat-number
         uses: classroom-resources/autograding-command-grader@v1
@@ -55,7 +51,6 @@ jobs:
           command: python -m unittest test_real.TestFindRepeatNumber
           timeout: 1
           max-score: 4
-
       - name: Unique Array
         id: unique-array
         uses: classroom-resources/autograding-command-grader@v1
@@ -66,7 +61,6 @@ jobs:
           command: python -m unittest test_real.TestUniqueArray
           timeout: 1
           max-score: 4
-
       - name: Only Unique Items
         id: only-unique-items
         uses: classroom-resources/autograding-command-grader@v1
@@ -77,7 +71,6 @@ jobs:
           command: python -m unittest test_real.TestOnlyUniqueItems
           timeout: 1
           max-score: 4
-
       - name: Are All Items Unique
         id: are-all-items-unique
         uses: classroom-resources/autograding-command-grader@v1
@@ -88,7 +81,6 @@ jobs:
           command: python -m unittest test_real.TestAreAllItemsUnique
           timeout: 1
           max-score: 4
-
       - name: List Cycle
         id: list-cycle
         uses: classroom-resources/autograding-command-grader@v1
@@ -99,7 +91,6 @@ jobs:
           command: python -m unittest test_real.TestListCycle
           timeout: 1
           max-score: 4
-
       - name: Three Sum
         id: three-sum
         uses: classroom-resources/autograding-command-grader@v1
@@ -110,7 +101,6 @@ jobs:
           command: python -m unittest test_real.TestThreeSum
           timeout: 1
           max-score: 4
-
       - name: Is Anagram
         id: is-anagram
         uses: classroom-resources/autograding-command-grader@v1
@@ -121,7 +111,6 @@ jobs:
           command: python -m unittest test_real.TestIsAnagram
           timeout: 1
           max-score: 4
-
       - name: Exclude Product
         id: exclude-product
         uses: classroom-resources/autograding-command-grader@v1
@@ -132,7 +121,6 @@ jobs:
           command: python -m unittest test_real.TestExcludeProduct
           timeout: 1
           max-score: 4
-
       - name: Autograding Reporter
         uses: classroom-resources/autograding-grading-reporter@v1
         env:
